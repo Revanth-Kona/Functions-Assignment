@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fibonacci(n) {
+            let fib = [0, 1];
+            for (i = 2; i <= n; i++) {
+                fib[i] = fib[i - 1] + fib[i - 2];
+            }
+            return fib;
+        }
+        console.log('1. Fibonacci series is :', fibonacci(5))
+
+        console.log('========================')
+        function temp(celsius) {
+            let fahrenheit = celsius * 1.8 + 32;
+            return fahrenheit;
+        }
+        console.log('2. Celsiud to fehrenhit is :', temp(20))
+
+        console.log('========================')
+        function sqrt(num) {
+            return sqrtnum;
+        }
+        let num = Math.sqrt(36)
+        console.log('3. sqrt of a number is :', num)
+
+        console.log('========================')
+        function rendom(num) {
+            return randumnumber;
+        }
+        let random = Math.floor(Math.random() * 56789);
+        console.log('4. The Random is :', random)
+
+        console.log('========================')
+        function pall(str){
+            let j = str.length-1
+            for(i=0;i<str.length/2;i++){
+                if(str[i]!=str[j]){
+                    return 'not a palindrome';
+                }
+                j--;
+            }
+            return 'is paliendrome';
+        }
+        let name1 = "Revanth";
+        let name2 = "mam";
+        console.log('5. name1 is :',pall(name1))
+        console.log('   name2 is :',pall(name2))
+    </script>
+</head>
+
+<body>
+    <h1>Javascript Assignment 1</h1>
+    1. Fibonacci Series<br>
+    2. Program to convert temperature from celsius to fahrenheit<br>
+    3. Find the square root of the number<br>
+    4. Generate random integer between two number<br>
+    5. Check the passed string is palondrom or not
+</body>
+
+</html>
